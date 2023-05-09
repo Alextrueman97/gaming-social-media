@@ -10,13 +10,15 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
+import com.ab.services.UserDetailsServiceImpl;
+
 @Configuration
 @EnableWebSecurity
 public class SpringSecurityConfig {
 
     @Bean
     public UserDetailsService userDetailsService() {
-        return new UserDetailsService();
+        return new UserDetailsServiceImpl();
     }
 
     @Bean
