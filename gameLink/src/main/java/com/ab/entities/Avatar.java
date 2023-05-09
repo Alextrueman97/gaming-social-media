@@ -19,4 +19,28 @@ public class Avatar {
 	@Lob
 	@Basic(fetch = FetchType.LAZY)
 	private File avatar;
+	
+	public Avatar() {
+		super();
+	}
+	
+	public Avatar(File avatar) {
+		super();
+		this.avatar = avatar;
+	}
+
+	public int getAvatarId() {
+		return avatarId;
+	}
+	public void setAvatarId(int avatarId) {
+		this.avatarId = avatarId;
+	}
+	public File getAvatar() {
+		return avatar;
+	}
+	public void setAvatar(File avatar) {
+		this.avatar = avatar;
+	}
+	
+	
 }
