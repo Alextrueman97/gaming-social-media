@@ -6,6 +6,10 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.ab.entities.UserData;
+import com.ab.exceptions.UserAlreadyExistsException;
+import com.ab.repositories.UserAccountRepository;
+
 @Service
 public class UserDetailsServiceImpl implements MyUserDetailsService {
 
